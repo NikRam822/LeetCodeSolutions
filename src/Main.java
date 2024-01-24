@@ -44,8 +44,11 @@ public class Main {
       /*  RegularExpressionMatching regularExpressionMatching = new RegularExpressionMatching();
         regularExpressionMatching.isMatch("abc","a***abc");*/
 
-        ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
-        containerWithMostWater.maxArea(new int[] {1,8,6,2,5,4,8,3,7});
+        /*ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
+        containerWithMostWater.maxArea(new int[] {1,8,6,2,5,4,8,3,7});*/
+
+        LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
+        longestCommonPrefix.longestCommonPrefix(new String[]{"flower","flower","flower","flower"});
 
     }
 }
