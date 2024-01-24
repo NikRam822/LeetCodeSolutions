@@ -47,8 +47,11 @@ public class Main {
         /*ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
         containerWithMostWater.maxArea(new int[] {1,8,6,2,5,4,8,3,7});*/
 
-        LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
-        longestCommonPrefix.longestCommonPrefix(new String[]{"flower","flower","flower","flower"});
+        /*LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
+        longestCommonPrefix.longestCommonPrefix(new String[]{"flower","flower","flower","flower"});*/
+
+        ThreeSum threeSum = new ThreeSum();
+        threeSum.threeSum(new int[]{-1,0,1,2,-1,-4});
 
     }
 }
