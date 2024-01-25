@@ -16,12 +16,10 @@ public class ThreeSum {
         });
 
         for (int i = 0; i < nums.length; i++) {
-            for (int j = 0; j < nums.length; j++) {
+            for (int j = i + 1; j < nums.length - 1; j++) {
                 int res = -1 * (nums[i] + nums[j]);
                 Integer c = numbers.get(res);
-                Integer[] con = new Integer[]{nums[i], nums[j], res};
-                Arrays.sort(con);
-                if (i != j && c != null) {
+                if (c != null) {
                     HashMap<Integer, Integer> map = new HashMap<>(numbers);
 
                     Integer check = map.get(nums[i]);
@@ -44,13 +42,16 @@ public class ThreeSum {
                     if (check3 < 0) {
                         continue;
                     }
+
+                    Integer[] con = new Integer[]{nums[i], nums[j], res};
+                    Arrays.sort(con);
                     result.add(List.of(con));
                 }
             }
         }
-        System.out.println(Arrays.toString(nums));
+        /*System.out.println(Arrays.toString(nums));
         System.out.println(numbers);
-        System.out.println(result);
+        System.out.println(result);*/
         return new ArrayList<>(result);
     }
 }
