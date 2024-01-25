@@ -50,8 +50,8 @@ public class Main {
         /*LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
         longestCommonPrefix.longestCommonPrefix(new String[]{"flower","flower","flower","flower"});*/
 
-        ThreeSum threeSum = new ThreeSum();
-        threeSum.threeSum(new int[]{-1,0,1,2,-1,-4});
+        /*ThreeSum threeSum = new ThreeSum();
+        threeSum.threeSum(new int[]{1,2,-2,-1});*/
 
     }
 }
