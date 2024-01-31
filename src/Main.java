@@ -2,6 +2,7 @@ import add_two_numbers.AddTwoNumbers;
 import add_two_numbers.ListNode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -52,6 +53,9 @@ public class Main {
 
         /*ThreeSum threeSum = new ThreeSum();
         threeSum.threeSum(new int[]{1,2,-2,-1});*/
+
+        /*ThreeSumClosest threeSumClosest = new ThreeSumClosest();
+        threeSumClosest.threeSumClosest(new int[]{0,1,2},0);*/
 
     }
 }
