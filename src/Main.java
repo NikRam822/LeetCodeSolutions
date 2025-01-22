@@ -57,5 +57,8 @@ public class Main {
         /*ThreeSumClosest threeSumClosest = new ThreeSumClosest();
         threeSumClosest.threeSumClosest(new int[]{0,1,2},0);*/
 
+        LetterCombinationsOfAPhoneNumber letterCombinationsOfAPhoneNumber = new LetterCombinationsOfAPhoneNumber();
+        letterCombinationsOfAPhoneNumber.letterCombinations("2346");
+
     }
 }
