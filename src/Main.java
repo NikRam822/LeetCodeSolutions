@@ -60,7 +60,10 @@ public class Main {
         /*LetterCombinationsOfAPhoneNumber letterCombinationsOfAPhoneNumber = new LetterCombinationsOfAPhoneNumber();
         letterCombinationsOfAPhoneNumber.letterCombinations("2346");*/
 
-        FourSum fourSum = new FourSum();
-        fourSum.fourSum(new int[]{1, 0, -1, 0, -2, 2}, 0);
+        /*FourSum fourSum = new FourSum();
+        fourSum.fourSum(new int[]{1, 0, -1, 0, -2, 2}, 0);*/
+
+        RemoveElement remove = new RemoveElement();
+        remove.removeElement(new int[]{3,2,2,3}, 3);
     }
 }
