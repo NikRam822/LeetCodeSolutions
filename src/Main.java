@@ -61,8 +61,11 @@ public class Main {
         letterCombinationsOfAPhoneNumber.letterCombinations("2346");*/
 
         FourSum fourSum = new FourSum();
-        fourSum.fourSum(new int[]{1, 0, -1, 0, -2, 2}, 0);
-
+        long start = System.currentTimeMillis();
+        fourSum.fourSum(new int[]{-1000000000,-1000000000,1000000000,-1000000000,-1000000000},
+                294967296);
+        long duration = System.currentTimeMillis() - start;
+        System.out.println( duration );
         /*RemoveElement remove = new RemoveElement();
         remove.removeElement(new int[]{3,2,2,3}, 3);*/
     }
