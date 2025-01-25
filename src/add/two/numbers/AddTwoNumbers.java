@@ -1,10 +1,10 @@
-package add_two_numbers;
+package add.two.numbers;
 
 import java.math.BigInteger;
 
 /**
  * Общая идея:
- * Переводим оба ListNode в числа BigInteger, складываем их и суммарное число конвертируем обратно в ListNode
+ * Переводим оба remove.nth.node.from.end.of.list.ListNode в числа BigInteger, складываем их и суммарное число конвертируем обратно в remove.nth.node.from.end.of.list.ListNode
  */
 public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
