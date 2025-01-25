@@ -1,8 +1,5 @@
-import add_two_numbers.AddTwoNumbers;
-import add_two_numbers.ListNode;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+import remove.nth.node.from.end.of.list.ListNode;
+import remove.nth.node.from.end.of.list.RemoveNthNodeFromEndOfList;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,7 +10,7 @@ public class Main {
         Spiral.spiralView();*/
 
         /*AddTwoNumbers addTwoNumbers = new AddTwoNumbers();*/
-        /*addTwoNumbers.addTwoNumbers(new ListNode(2, new ListNode(4, new ListNode(3))), new ListNode(5, new ListNode(6, new ListNode(4))));*/
+        /*addTwoNumbers.addTwoNumbers(new remove.nth.node.from.end.of.list.ListNode(2, new remove.nth.node.from.end.of.list.ListNode(4, new remove.nth.node.from.end.of.list.ListNode(3))), new remove.nth.node.from.end.of.list.ListNode(5, new remove.nth.node.from.end.of.list.ListNode(6, new remove.nth.node.from.end.of.list.ListNode(4))));*/
 
         /*LengthOfLongestSubstring lengthOfLongestSubstring = new LengthOfLongestSubstring();
         lengthOfLongestSubstring.lengthOfLongestSubstring("aab");*/
@@ -60,13 +57,16 @@ public class Main {
         /*LetterCombinationsOfAPhoneNumber letterCombinationsOfAPhoneNumber = new LetterCombinationsOfAPhoneNumber();
         letterCombinationsOfAPhoneNumber.letterCombinations("2346");*/
 
-        FourSum fourSum = new FourSum();
-        long start = System.currentTimeMillis();
+        /*FourSum fourSum = new FourSum();
         fourSum.fourSum(new int[]{-1000000000,-1000000000,1000000000,-1000000000,-1000000000},
-                294967296);
-        long duration = System.currentTimeMillis() - start;
-        System.out.println( duration );
+                294967296);*/
+
         /*RemoveElement remove = new RemoveElement();
         remove.removeElement(new int[]{3,2,2,3}, 3);*/
+
+        RemoveNthNodeFromEndOfList remover = new RemoveNthNodeFromEndOfList();
+        //remover.removeNthFromEnd(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))), 2);
+        remover.removeNthFromEnd(new ListNode(1),1);
+
     }
 }
