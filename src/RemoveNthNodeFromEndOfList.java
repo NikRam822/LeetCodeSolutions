@@ -1,4 +1,4 @@
-package remove.nth.node.from.end.of.list;
+import utils.ListNode;
 
 import java.util.*;
 

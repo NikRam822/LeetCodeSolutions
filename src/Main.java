@@ -1,5 +1,4 @@
-import remove.nth.node.from.end.of.list.ListNode;
-import remove.nth.node.from.end.of.list.RemoveNthNodeFromEndOfList;
+import utils.ListNode;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,9 +8,9 @@ public class Main {
         /*Spiral Spiral = new Spiral();
         Spiral.spiralView();*/
 
-        /*AddTwoNumbers addTwoNumbers = new AddTwoNumbers();*/
-        /*addTwoNumbers.addTwoNumbers(new remove.nth.node.from.end.of.list.ListNode(2, new remove.nth.node.from.end.of.list.ListNode(4, new remove.nth.node.from.end.of.list.ListNode(3))), new remove.nth.node.from.end.of.list.ListNode(5, new remove.nth.node.from.end.of.list.ListNode(6, new remove.nth.node.from.end.of.list.ListNode(4))));*/
-
+       /* AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
+        addTwoNumbers.addTwoNumbers(new utils.ListNode(2, new utils.ListNode(4, new utils.ListNode(3))), new utils.ListNode(5, new utils.ListNode(6, new utils.ListNode(4))));
+*/
         /*LengthOfLongestSubstring lengthOfLongestSubstring = new LengthOfLongestSubstring();
         lengthOfLongestSubstring.lengthOfLongestSubstring("aab");*/
 
@@ -64,12 +63,12 @@ public class Main {
         /*RemoveElement remove = new RemoveElement();
         remove.removeElement(new int[]{3,2,2,3}, 3);*/
 
-        /*RemoveNthNodeFromEndOfList remover = new RemoveNthNodeFromEndOfList();
+       /* RemoveNthNodeFromEndOfList remover = new RemoveNthNodeFromEndOfList();
         //remover.removeNthFromEnd(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))), 2);
         remover.removeNthFromEnd(new ListNode(1),1);*/
 
-        ValidParentheses validParentheses = new ValidParentheses();
-        validParentheses.isValid("(){}}{");
+      /*  ValidParentheses validParentheses = new ValidParentheses();
+        validParentheses.isValid("(){}}{");*/
 
     }
 }
