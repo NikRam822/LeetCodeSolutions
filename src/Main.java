@@ -70,5 +70,8 @@ public class Main {
       /*  ValidParentheses validParentheses = new ValidParentheses();
         validParentheses.isValid("(){}}{");*/
 
+        MergeTwoSortedLists m = new MergeTwoSortedLists();
+        //m.mergeTwoLists(new ListNode(1, new ListNode(2, new ListNode(4))), new ListNode(1, new ListNode(3, new ListNode(4))));
+        m.mergeTwoLists(new ListNode(), new ListNode());
     }
 }
