@@ -64,9 +64,12 @@ public class Main {
         /*RemoveElement remove = new RemoveElement();
         remove.removeElement(new int[]{3,2,2,3}, 3);*/
 
-        RemoveNthNodeFromEndOfList remover = new RemoveNthNodeFromEndOfList();
+        /*RemoveNthNodeFromEndOfList remover = new RemoveNthNodeFromEndOfList();
         //remover.removeNthFromEnd(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))), 2);
-        remover.removeNthFromEnd(new ListNode(1),1);
+        remover.removeNthFromEnd(new ListNode(1),1);*/
+
+        ValidParentheses validParentheses = new ValidParentheses();
+        validParentheses.isValid("(){}}{");
 
     }
 }
