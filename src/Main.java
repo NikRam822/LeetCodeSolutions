@@ -77,7 +77,10 @@ public class Main {
 //        GenerateParentheses gen = new GenerateParentheses();
 //        gen.generateParenthesis(3);
 
-        MergekSortedLists m = new MergekSortedLists();
-        m.mergeKLists(new ListNode[]{new ListNode(1, new ListNode(4, new ListNode(5))), new ListNode(1, new ListNode(3, new ListNode(4))), new ListNode(2, new ListNode(6))});
+//        MergekSortedLists m = new MergekSortedLists();
+//        m.mergeKLists(new ListNode[]{new ListNode(1, new ListNode(4, new ListNode(5))), new ListNode(1, new ListNode(3, new ListNode(4))), new ListNode(2, new ListNode(6))});
+//
+        SwapNodesInPairs swap = new SwapNodesInPairs();
+        swap.swapPairs(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4)))));
     }
 }
