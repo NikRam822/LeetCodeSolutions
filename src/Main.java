@@ -74,7 +74,10 @@ public class Main {
 //        //m.mergeTwoLists(new ListNode(1, new ListNode(2, new ListNode(4))), new ListNode(1, new ListNode(3, new ListNode(4))));
 //        m.mergeTwoLists(new ListNode(), new ListNode());
 
-        GenerateParentheses gen = new GenerateParentheses();
-        gen.generateParenthesis(3);
+//        GenerateParentheses gen = new GenerateParentheses();
+//        gen.generateParenthesis(3);
+
+        MergekSortedLists m = new MergekSortedLists();
+        m.mergeKLists(new ListNode[]{new ListNode(1, new ListNode(4, new ListNode(5))), new ListNode(1, new ListNode(3, new ListNode(4))), new ListNode(2, new ListNode(6))});
     }
 }
