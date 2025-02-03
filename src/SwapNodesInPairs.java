@@ -20,7 +20,7 @@ public class SwapNodesInPairs {
             System.out.println(arr.get(i).val);
         }
 
-        return last;
+        return null;
 
     }
 
