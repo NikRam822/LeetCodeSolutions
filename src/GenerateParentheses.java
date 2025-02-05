@@ -1,14 +1,14 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class GenerateParentheses {
 
     static HashMap<Integer, List<String>> map = new HashMap<>();
-    static int max = 2;
 
     static {
         map.put(1, Arrays.asList("()"));
         map.put(2, Arrays.asList("()()", "(())"));
-        //map.put(3, Arrays.asList("()()()", "((()))", "(()())", "(())()", "()(())"));
+        map.put(3, Arrays.asList("()()()", "((()))", "(()())", "(())()", "()(())"));
         //map.put(4, Arrays.asList("()()()()","(((())))","((()()))","((())())","((()))()","(()(()))","(()()())","(()())()","(())(())","(())()()","()((()))","()(()())","()(())()","()()(())"));
     }
 
@@ -17,21 +17,37 @@ public class GenerateParentheses {
         if (res != null) {
             return res;
         }
-        if (n - max == 1) {
-            res = map.get(max);
+        if (n - map.size() == 1) {
+            res = map.get(map.size());
         }
         Set<String> result = new HashSet<>();
 
         String str = res != null ? res.get(0) : "";
-        int currentIndex = 0;
+
+
+        String str1 = str + ")";
+        String str2 = "(" + str;
+
 
         for (int i = 0; i < str.length(); i++) {
-            System.out.println(str.charAt(i));
+            String subStrO1 = str1.substring(0, i);
+            String subStrO2 = str1.substring(i);
+            //System.out.println(subStrO1+"("+subStrO2);
+            result.add(subStrO1 + "(" + subStrO2);
+            String subStrC1 = str2.substring(0, str.length() - i - 1);
+            String subStrC2 = str2.substring(str.length() - i - 1);
+
+            if (i != str.length() - 1) {
+                // System.out.println(subStrC1 + ")" + subStrC2);
+                result.add(subStrC1 + ")" + subStrC2);
+            }
+
         }
-
-        System.out.println(result);
-
-        return null;
+        List<String> res1 = new ArrayList<>(result);
+        res1.add(1, new String("(" + map.get(n - 1).get(1) + ")"));
+        System.out.println(res1);
+        map.put(n, res1);
+        return res1;
     }
 //    ()(), (()),
 //   ()()(), ((())), (()()), ()()
