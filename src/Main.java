@@ -83,8 +83,12 @@ public class Main {
        /* SwapNodesInPairs swap = new SwapNodesInPairs();
         swap.swapPairs(new ListNode(1, new ListNode(2, new ListNode(3))));*/
 
-        RemoveDuplicatesFromSortedArray removeDuplicatesFromSortedArray = new RemoveDuplicatesFromSortedArray();
-       removeDuplicatesFromSortedArray.removeDuplicates(new int[] {0,0,1,1,1,2,2,3,3,4});
-        removeDuplicatesFromSortedArray.removeDuplicates(new int[] {1,1,2});
+//        RemoveDuplicatesFromSortedArray removeDuplicatesFromSortedArray = new RemoveDuplicatesFromSortedArray();
+//       removeDuplicatesFromSortedArray.removeDuplicates(new int[] {0,0,1,1,1,2,2,3,3,4});
+//        removeDuplicatesFromSortedArray.removeDuplicates(new int[] {1,1,2});
+
+        FindTheIndexOfTheFirstOccurrenceInAString f = new FindTheIndexOfTheFirstOccurrenceInAString();
+
+        f.strStr("sadbutsad", "ut");
     }
 }
