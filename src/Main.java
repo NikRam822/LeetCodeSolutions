@@ -87,8 +87,14 @@ public class Main {
 //       removeDuplicatesFromSortedArray.removeDuplicates(new int[] {0,0,1,1,1,2,2,3,3,4});
 //        removeDuplicatesFromSortedArray.removeDuplicates(new int[] {1,1,2});
 
-        FindTheIndexOfTheFirstOccurrenceInAString f = new FindTheIndexOfTheFirstOccurrenceInAString();
+      /*  FindTheIndexOfTheFirstOccurrenceInAString f = new FindTheIndexOfTheFirstOccurrenceInAString();
 
-        f.strStr("sadbutsad", "ut");
+        f.strStr("sadbutsad", "ut");*/
+
+    /* ContainsDuplicate containsDuplicate = new ContainsDuplicate();
+        containsDuplicate.hasDuplicate(new int[]{1,2,3,4,4});*/
+
+        ValidAnagram validAnagram = new ValidAnagram();
+        validAnagram.isAnagram("st","ts");
     }
 }
