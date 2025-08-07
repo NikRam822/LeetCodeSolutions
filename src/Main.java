@@ -94,7 +94,14 @@ public class Main {
     /* ContainsDuplicate containsDuplicate = new ContainsDuplicate();
         containsDuplicate.hasDuplicate(new int[]{1,2,3,4,4});*/
 
-        ValidAnagram validAnagram = new ValidAnagram();
-        validAnagram.isAnagram("st","ts");
+       /* ValidAnagram validAnagram = new ValidAnagram();
+        validAnagram.isAnagram("st","ts");*/
+
+       /* TwoSun twoSun = new TwoSun();
+        twoSun.twoSum(new int[]{3,2,4}, 6);*/
+
+        GroupAnagrams groupAnagrams = new GroupAnagrams();
+
+        groupAnagrams.groupAnagrams(new String[]{"eat","tea","tan","ate","nat","bat"});
     }
 }
