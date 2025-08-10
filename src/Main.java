@@ -106,7 +106,10 @@ public class Main {
        /* TopKFrequentElements topKFrequentElements = new TopKFrequentElements();
         topKFrequentElements.topKFrequent(new int[]{1,1,1,2,2,3,3,3}, 2);*/
 
-        BinarySearch binarySearch = new BinarySearch();
-        binarySearch.search(new int[]{-1, 0, 2, 4, 6, 8}, 4);
+      /*  BinarySearch binarySearch = new BinarySearch();
+        binarySearch.search(new int[]{-1, 0, 2, 4, 6, 8}, 4);*/
+
+        ValidPalindrome validPalindrome = new ValidPalindrome();
+        validPalindrome.isPalindrome("car");
     }
 }
