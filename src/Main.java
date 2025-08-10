@@ -67,8 +67,8 @@ public class Main {
         //remover.removeNthFromEnd(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))), 2);
         remover.removeNthFromEnd(new ListNode(1),1);*/
 
-      /*  ValidParentheses validParentheses = new ValidParentheses();
-        validParentheses.isValid("(){}}{");*/
+        /*ValidParentheses validParentheses = new ValidParentheses();
+        validParentheses.isValid("(){}][");*/
 
 //        MergeTwoSortedLists m = new MergeTwoSortedLists();
 //        //m.mergeTwoLists(new ListNode(1, new ListNode(2, new ListNode(4))), new ListNode(1, new ListNode(3, new ListNode(4))));
@@ -97,8 +97,8 @@ public class Main {
        /* ValidAnagram validAnagram = new ValidAnagram();
         validAnagram.isAnagram("st","ts");*/
 
-        TwoSun twoSun = new TwoSun();
-        twoSun.twoSum(new int[]{1,2,3,4}, 3);
+        /*TwoSun twoSun = new TwoSun();
+        twoSun.twoSum(new int[]{1,2,3,4}, 3);*/
 
        /* GroupAnagrams groupAnagrams = new GroupAnagrams();
         groupAnagrams.groupAnagrams(new String[]{"eat","tea","tan","ate","nat","bat"});*/
