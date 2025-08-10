@@ -97,8 +97,8 @@ public class Main {
        /* ValidAnagram validAnagram = new ValidAnagram();
         validAnagram.isAnagram("st","ts");*/
 
-       /* TwoSun twoSun = new TwoSun();
-        twoSun.twoSum(new int[]{3,2,4}, 6);*/
+        TwoSun twoSun = new TwoSun();
+        twoSun.twoSum(new int[]{1,2,3,4}, 3);
 
        /* GroupAnagrams groupAnagrams = new GroupAnagrams();
         groupAnagrams.groupAnagrams(new String[]{"eat","tea","tan","ate","nat","bat"});*/
@@ -109,7 +109,7 @@ public class Main {
       /*  BinarySearch binarySearch = new BinarySearch();
         binarySearch.search(new int[]{-1, 0, 2, 4, 6, 8}, 4);*/
 
-        ValidPalindrome validPalindrome = new ValidPalindrome();
-        validPalindrome.isPalindrome("car");
+        /*ValidPalindrome validPalindrome = new ValidPalindrome();
+        validPalindrome.isPalindrome("car");*/
     }
 }
