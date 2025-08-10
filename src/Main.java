@@ -117,5 +117,9 @@ public class Main {
 
 /*        EvaluateReversePolishNotation evaluateReversePolishNotation = new EvaluateReversePolishNotation();
         evaluateReversePolishNotation.evalRPN(new String[]{"1", "2", "+", "3", "*", "4", "/"});*/
+
+        DailyTemperatures dailyTemperatures = new DailyTemperatures();
+        dailyTemperatures.dailyTemperatures(new int[]{30, 38, 30, 36, 35, 40, 28});
+//       dailyTemperatures.dailyTemperatures(new int[]{77,41,77,41,41,41,77,77,41,41});
     }
 }
