@@ -112,7 +112,10 @@ public class Main {
         /*ValidPalindrome validPalindrome = new ValidPalindrome();
         validPalindrome.isPalindrome("car");*/
 
-        MinimumStack.MinStack minStack = new MinimumStack.MinStack();
-        minStack.getMin();
+       /* MinimumStack.MinStack minStack = new MinimumStack.MinStack();
+        minStack.getMin();*/
+
+/*        EvaluateReversePolishNotation evaluateReversePolishNotation = new EvaluateReversePolishNotation();
+        evaluateReversePolishNotation.evalRPN(new String[]{"1", "2", "+", "3", "*", "4", "/"});*/
     }
 }
