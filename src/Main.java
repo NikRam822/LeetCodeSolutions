@@ -100,8 +100,10 @@ public class Main {
        /* TwoSun twoSun = new TwoSun();
         twoSun.twoSum(new int[]{3,2,4}, 6);*/
 
-        GroupAnagrams groupAnagrams = new GroupAnagrams();
+       /* GroupAnagrams groupAnagrams = new GroupAnagrams();
+        groupAnagrams.groupAnagrams(new String[]{"eat","tea","tan","ate","nat","bat"});*/
 
-        groupAnagrams.groupAnagrams(new String[]{"eat","tea","tan","ate","nat","bat"});
+        TopKFrequentElements topKFrequentElements = new TopKFrequentElements();
+        topKFrequentElements.topKFrequent(new int[]{1,1,1,2,2,3,3,3}, 2);
     }
 }
