@@ -111,5 +111,8 @@ public class Main {
 
         /*ValidPalindrome validPalindrome = new ValidPalindrome();
         validPalindrome.isPalindrome("car");*/
+
+        MinimumStack.MinStack minStack = new MinimumStack.MinStack();
+        minStack.getMin();
     }
 }
