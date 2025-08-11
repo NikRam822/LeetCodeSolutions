@@ -1,4 +1,5 @@
 import dt.tasks.Compressor;
+import dt.tasks.SmileFixer;
 import utils.ListNode;
 import utils.TreeNode;
 
@@ -131,8 +132,12 @@ public class Main {
         invertBinaryTree.invertTree(new TreeNode(1, new TreeNode(2, new TreeNode(4), new TreeNode(5)), new TreeNode(3, new TreeNode(6), new TreeNode(7))));
         */
 
-        Compressor compressor = new Compressor();
-        System.out.println(compressor.toCompress("AAACCABBBBDDDDDC"));
+    /*    Compressor compressor = new Compressor();
+        System.out.println(compressor.toCompress("AAACCABBBBDDDDDC"));*/
+
+//        SmileFixer smileFixer = new SmileFixer();
+//        smileFixer.smileFixer("Круто :-)) А я недавно завалил туда собес :-((()(");
+//        smileFixer.smileFixer(": - ))");
 
     }
 }
