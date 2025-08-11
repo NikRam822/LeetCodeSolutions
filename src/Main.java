@@ -1,4 +1,6 @@
+import dt.tasks.Compressor;
 import utils.ListNode;
+import utils.TreeNode;
 
 public class Main {
     public static void main(String[] args) {
@@ -122,7 +124,15 @@ public class Main {
         dailyTemperatures.dailyTemperatures(new int[]{30, 38, 30, 36, 35, 40, 28});
         dailyTemperatures.dailyTemperatures(new int[]{77, 41, 77, 41, 41, 41, 77, 77, 41, 41});*/
 
-        BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
-        bestTimeToBuyAndSellStock.maxProfit(new int[]{10,1,5,6,7,1});
+        /*BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
+        bestTimeToBuyAndSellStock.maxProfit(new int[]{10,1,5,6,7,1});*/
+
+        /*InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
+        invertBinaryTree.invertTree(new TreeNode(1, new TreeNode(2, new TreeNode(4), new TreeNode(5)), new TreeNode(3, new TreeNode(6), new TreeNode(7))));
+        */
+
+        Compressor compressor = new Compressor();
+        System.out.println(compressor.toCompress("AAACCABBBBDDDDDC"));
+
     }
 }
