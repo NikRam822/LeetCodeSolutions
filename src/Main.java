@@ -1,6 +1,8 @@
 import dt.tasks.Compressor;
 import dt.tasks.SmileFixer;
+import dt.tasks.Symmetry;
 import utils.ListNode;
+import utils.Point;
 import utils.TreeNode;
 
 public class Main {
@@ -138,6 +140,9 @@ public class Main {
 //        SmileFixer smileFixer = new SmileFixer();
 //        smileFixer.smileFixer("Круто :-)) А я недавно завалил туда собес :-((()(");
 //        smileFixer.smileFixer(": - ))");
+
+        Symmetry symmetry = new Symmetry();
+        System.out.println(symmetry.checkPoint(new Point[] {new Point(0, 0), new Point(0, 0), new Point(1, 1), new Point(3, 1), new Point(4, 0), new Point(4, 0)}));
 
     }
 }

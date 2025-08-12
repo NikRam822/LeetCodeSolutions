@@ -4,7 +4,6 @@ import utils.Point;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.Optional;
 
 /*
 Дан массив точек на плоскости (x, y) требуется дать ответ можно ли провести
@@ -17,24 +16,40 @@ import java.util.Optional;
 [(0, 0)] - можно построить
 [(0, 0), (1, 0), (3, 0)] - нельзя построить
 */
+
+/**
+ * Идея решения:
+ * Сортируем массив, удаляя из него дубликаты. Это нужно, потому что симметрия будет для равноудаленных элементов по икс (поэтому компаратор переопределен для икс координат)
+ * СЧитаем ось симметрии: берем равноудаленные точки (самую левую и самую правую)
+ * и считаем середину, учитывая отступ слева: middle(simmLine) = left + (right-left)/2
+ * Затем идем по массиву и проверяем крайние эелемнты (крайний справа и крайний слева).
+ * Если разница координат крайних эелемнтов по y не 0, значит они на разной высоте и они не симметричны
+ * (если хотим проверяь симметрию и по высоте, просто изменить условие, проверяя разность по модулю )
+ * Затем проверяем равноудаленность крайхних точек по x относительно оис симметрии.
+ * Если расстояние не одинакове для крайних точек - точки не симметричины - возвращаем false
+ *
+ * Если фолсов нет в цикле, значит по выходу из метода вернем тру
+ */
 public class Symmetry {
 
     public boolean checkPoint(Point[] points) {
+        if (points.length <= 1) return true;
+
         Comparator<Point> comparator = (o1, o2) -> {
             if (o1.getX() > o2.getX()) return 1;
             if (o1.getX() < o2.getX()) return -1;
             return 0;
         };
 
-        //TODO: Сделать сортировку и попровобовать двумя уазателями идти слева и справа
-        Optional<Point> min = Arrays.stream(points).min(comparator);
-        Optional<Point> max = Arrays.stream(points).max(comparator);
+        points = Arrays.stream(points).distinct().sorted(comparator).toArray(Point[]::new);
 
-        Point diff = Point.dff(max.get(), min.get());
-        if (diff.getY() != 0) return false;
+        double simmLine = points[0].getX() + (double) (points[points.length - 1].getX() - points[0].getX()) / 2;
 
-        double simmLine = min.get().getX() + (double) (max.get().getX() - min.get().getX()) / 2;
-
-        return false;
+        for (int i = 0; i < points.length/2; i++) {
+            if (Point.dff(points[points.length - 1 - i], points[i]).getY() != 0) return false;
+            if (Math.abs(points[i].getX() - simmLine) != Math.abs(points[points.length - 1 - i].getX() - simmLine))
+                return false;
+        }
+        return true;
     }
 }
