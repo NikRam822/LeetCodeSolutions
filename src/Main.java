@@ -131,9 +131,9 @@ public class Main {
         /*BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
         bestTimeToBuyAndSellStock.maxProfit(new int[]{10,1,5,6,7,1});*/
 
-        InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
+        /*InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
         invertBinaryTree.invertTree(new TreeNode(1, new TreeNode(2, new TreeNode(4), new TreeNode(5)), new TreeNode(3, new TreeNode(6), new TreeNode(7))));
-
+*/
     /*    Compressor compressor = new Compressor();
         System.out.println(compressor.toCompress("AAACCABBBBDDDDDC"));*/
 
@@ -150,6 +150,11 @@ public class Main {
         System.out.println(searchIndex.searchIndex("Я шёл по улице, капал дождь, было пасмурно, но моё настроение было на высоте, ведь я решил эту алгоритмическую задачу!", "жоддь"));
         System.out.println(searchIndex.searchIndex("Я шёл по улице, капал дождь, было пасмурно, но моё настроение было на высоте, ведь я решил эту алгоритмическую задачу!", ", пасмурнобыло , но моё настроение"));
 */
+
+        MaximumDepthOfBinaryTree maximumDepthOfBinaryTree = new MaximumDepthOfBinaryTree();
+//        maximumDepthOfBinaryTree.maxDepth(new TreeNode(1, new TreeNode(2, null, null), new TreeNode(3, new TreeNode(4), null)));
+//        maximumDepthOfBinaryTree.maxDepth(new TreeNode(1, new TreeNode(2, new TreeNode(4), new TreeNode(5)), new TreeNode(3, new TreeNode(6), new TreeNode(7))));
+        maximumDepthOfBinaryTree.maxDepth(new TreeNode(1, new TreeNode(2, new TreeNode(4), null), new TreeNode(3, null, new TreeNode(5))));
 
     }
 }
