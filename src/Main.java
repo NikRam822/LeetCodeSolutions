@@ -1,4 +1,5 @@
 import dt.tasks.Compressor;
+import dt.tasks.SearchIndex;
 import dt.tasks.SmileFixer;
 import dt.tasks.Symmetry;
 import utils.ListNode;
@@ -137,12 +138,15 @@ public class Main {
     /*    Compressor compressor = new Compressor();
         System.out.println(compressor.toCompress("AAACCABBBBDDDDDC"));*/
 
-//        SmileFixer smileFixer = new SmileFixer();
-//        smileFixer.smileFixer("Круто :-)) А я недавно завалил туда собес :-((()(");
-//        smileFixer.smileFixer(": - ))");
+/*        SmileFixer smileFixer = new SmileFixer();
+        smileFixer.smileFixer("Круто :-)) А я недавно завалил туда собес :-((()(");
+        smileFixer.smileFixer(": - ))");*/
 
-        Symmetry symmetry = new Symmetry();
+        /*Symmetry symmetry = new Symmetry();
         System.out.println(symmetry.checkPoint(new Point[] {new Point(0, 0), new Point(0, 0), new Point(1, 1), new Point(3, 1), new Point(4, 0), new Point(4, 0)}));
+*/
 
+        SearchIndex searchIndex = new SearchIndex();
+        System.out.println(searchIndex.searchIndex("Я шёл по улице, капал дождь, было пасмурно, но моё настроение было на высоте, ведь я решил эту алгоритмическую задачу!", "жоддь"));
     }
 }
