@@ -148,5 +148,6 @@ public class Main {
 
         SearchIndex searchIndex = new SearchIndex();
         System.out.println(searchIndex.searchIndex("Я шёл по улице, капал дождь, было пасмурно, но моё настроение было на высоте, ведь я решил эту алгоритмическую задачу!", "жоддь"));
+        System.out.println(searchIndex.searchIndex("Я шёл по улице, капал дождь, было пасмурно, но моё настроение было на высоте, ведь я решил эту алгоритмическую задачу!", ", пасмурнобыло , но моё настроение"));
     }
 }
