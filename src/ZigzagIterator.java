@@ -128,7 +128,7 @@ import java.util.*;
  *
  * ЕСли просытми словами, в методе некст - мы достаем элеемнт из очереди, у элеемнта достаем значение, смещаяя курсор на следующий и проверям, что у текущего элемента есть следующий, чтобы курсор не смотрел в пустоту.
  */
-public class ZigzagIterator {
+/*public class ZigzagIterator {
     private Queue<Iterator<Integer>> queue;
 
     public ZigzagIterator(List<Integer> v1, List<Integer> v2) {
@@ -153,5 +153,38 @@ public class ZigzagIterator {
         }
         return result;
     }
+}*/
+
+/*Хранить два индекса (по каждому вектору) и флаг, чей сейчас ход.
+В next() возвращать элемент из текущего вектора, переключать ход на другой, учитывая границы и проверяя, не закончился ли вектор.*/
+import java.util.List;
+
+public class ZigzagIterator {
+    private List<Integer> v1, v2;
+    private int i = 0, j = 0;
+    private boolean turnV1 = true;  // чей ход
+
+    public ZigzagIterator(List<Integer> v1, List<Integer> v2) {
+        this.v1 = v1;
+        this.v2 = v2;
+    }
+
+    public boolean hasNext() {
+        return i < v1.size() || j < v2.size();
+    }
+
+    public int next() {
+        if (!hasNext()) {
+            throw new java.util.NoSuchElementException();
+        }
+        if ((turnV1 && i < v1.size()) || j >= v2.size()) {
+            turnV1 = false;
+            return v1.get(i++);
+        } else {
+            turnV1 = true;
+            return v2.get(j++);
+        }
+    }
 }
+
 
