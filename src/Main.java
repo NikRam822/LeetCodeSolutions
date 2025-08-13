@@ -144,12 +144,11 @@ public class Main {
         /*Symmetry symmetry = new Symmetry();
         System.out.println(symmetry.checkPoint(new Point[] {new Point(0, 0), new Point(0, 0), new Point(1, 1), new Point(3, 1), new Point(4, 0), new Point(4, 0)}));
 */
-/*
 
-        SearchIndex searchIndex = new SearchIndex();
-        System.out.println(searchIndex.searchIndex("Я шёл по улице, капал дождь, было пасмурно, но моё настроение было на высоте, ведь я решил эту алгоритмическую задачу!", "жоддь"));
-        System.out.println(searchIndex.searchIndex("Я шёл по улице, капал дождь, было пасмурно, но моё настроение было на высоте, ведь я решил эту алгоритмическую задачу!", ", пасмурнобыло , но моё настроение"));
-*/
+//        SearchIndex searchIndex = new SearchIndex();
+//        System.out.println(searchIndex.searchIndex("Я шёл по улице, капал дождь, было пасмурно, но моё настроение было на высоте, ведь я решил эту алгоритмическую задачу!", "жоддь"));
+//        System.out.println(searchIndex.searchIndex("Я шёл по улице, капал дождь, было пасмурно, но моё настроение было на высоте, ведь я решил эту алгоритмическую задачу!", ", пасмурнобыло , но моё настроение"));
+//        System.out.println(searchIndex.searchIndex("abab","bab")); TODO: Этот кейс не проходит, переделать
 
 /*
         MaximumDepthOfBinaryTree maximumDepthOfBinaryTree = new MaximumDepthOfBinaryTree();
@@ -159,8 +158,12 @@ public class Main {
 
 */
 
-        DiameterOfBinaryTree diameterOfBinaryTree = new DiameterOfBinaryTree();
+ /*       DiameterOfBinaryTree diameterOfBinaryTree = new DiameterOfBinaryTree();
         // [1,null,2,3,4,5]
         diameterOfBinaryTree.diameterOfBinaryTree(new TreeNode(1, null, new TreeNode(2, new TreeNode(3, new TreeNode(5), null), new TreeNode(4))));
+ */
+
+        ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
+        reverseLinkedList.reverseList(new ListNode(0, new ListNode(1, new ListNode(2, new ListNode(3)))));
     }
 }
