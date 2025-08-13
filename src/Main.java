@@ -151,10 +151,16 @@ public class Main {
         System.out.println(searchIndex.searchIndex("Я шёл по улице, капал дождь, было пасмурно, но моё настроение было на высоте, ведь я решил эту алгоритмическую задачу!", ", пасмурнобыло , но моё настроение"));
 */
 
+/*
         MaximumDepthOfBinaryTree maximumDepthOfBinaryTree = new MaximumDepthOfBinaryTree();
-//        maximumDepthOfBinaryTree.maxDepth(new TreeNode(1, new TreeNode(2, null, null), new TreeNode(3, new TreeNode(4), null)));
-//        maximumDepthOfBinaryTree.maxDepth(new TreeNode(1, new TreeNode(2, new TreeNode(4), new TreeNode(5)), new TreeNode(3, new TreeNode(6), new TreeNode(7))));
+        maximumDepthOfBinaryTree.maxDepth(new TreeNode(1, new TreeNode(2, null, null), new TreeNode(3, new TreeNode(4), null)));
+        maximumDepthOfBinaryTree.maxDepth(new TreeNode(1, new TreeNode(2, new TreeNode(4), new TreeNode(5)), new TreeNode(3, new TreeNode(6), new TreeNode(7))));
         maximumDepthOfBinaryTree.maxDepth(new TreeNode(1, new TreeNode(2, new TreeNode(4), null), new TreeNode(3, null, new TreeNode(5))));
 
+*/
+
+        DiameterOfBinaryTree diameterOfBinaryTree = new DiameterOfBinaryTree();
+        // [1,null,2,3,4,5]
+        diameterOfBinaryTree.diameterOfBinaryTree(new TreeNode(1, null, new TreeNode(2, new TreeNode(3, new TreeNode(5), null), new TreeNode(4))));
     }
 }
