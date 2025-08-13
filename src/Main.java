@@ -175,6 +175,12 @@ public class Main {
         neighborsSearch.neighborsSearch(new int[]{1, 1, 1, 1, 1}, 0, 3);    // [1, 1, 1]
         neighborsSearch.neighborsSearch(new int[]{1}, 0, 1);                // [1]*/
 
+        SummaryRanges summaryRanges = new SummaryRanges();
+//        summaryRanges.summaryRanges(new int[]{0,1,2,4,5,7});
+//        summaryRanges.summaryRanges(new int[]{0,2,3,4,6,8,9});
+//        summaryRanges.summaryRanges(new int[]{-2147483648,-2147483647,2147483647});
+        summaryRanges.summaryRanges(new int[]{0,1,2,4,5,7,9,10,12,14,15,16,27,28});
+
 
     }
 }
