@@ -3,6 +3,9 @@ import utils.ListNode;
 import utils.Point;
 import utils.TreeNode;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         /*TwoSum twoSum =new TwoSum();*/
@@ -175,11 +178,36 @@ public class Main {
         neighborsSearch.neighborsSearch(new int[]{1, 1, 1, 1, 1}, 0, 3);    // [1, 1, 1]
         neighborsSearch.neighborsSearch(new int[]{1}, 0, 1);                // [1]*/
 
-        SummaryRanges summaryRanges = new SummaryRanges();
-//        summaryRanges.summaryRanges(new int[]{0,1,2,4,5,7});
-//        summaryRanges.summaryRanges(new int[]{0,2,3,4,6,8,9});
-//        summaryRanges.summaryRanges(new int[]{-2147483648,-2147483647,2147483647});
-        summaryRanges.summaryRanges(new int[]{0,1,2,4,5,7,9,10,12,14,15,16,27,28});
+        /*SummaryRanges summaryRanges = new SummaryRanges();
+        summaryRanges.summaryRanges(new int[]{0,1,2,4,5,7});
+        summaryRanges.summaryRanges(new int[]{0,2,3,4,6,8,9});
+        summaryRanges.summaryRanges(new int[]{-2147483648,-2147483647,2147483647});
+        summaryRanges.summaryRanges(new int[]{0,1,2,4,5,7,9,10,12,14,15,16,27,28});*/
+
+
+//        new ZigzagIterator(Arrays.asList(1, 2), Arrays.asList(1, 2)); // 1 1 2 2
+//        new ZigzagIterator(Arrays.asList(1), Arrays.asList(2, 3, 4)); // 1 2 3 4
+//        new ZigzagIterator(Arrays.asList(1, 3, 5), Arrays.asList(2, 4)); // 1 2 3 4 5
+//        new ZigzagIterator(Arrays.asList(), Arrays.asList(1, 2, 3)); // 1 2 3
+//        new ZigzagIterator(Arrays.asList(10, 20, 30), Arrays.asList()); // 10 20 30
+//        new ZigzagIterator(Arrays.asList(), Arrays.asList()); // (пустой вывод)
+//        new ZigzagIterator(Arrays.asList(7), Arrays.asList(8)); // 7 8
+//        new ZigzagIterator(Arrays.asList(1, 2, 3, 4), Arrays.asList(5, 6)); // 1 5 2 6 3 4
+
+
+//      var iterator=  new ZigzagIterator(Arrays.asList(1, 2), Arrays.asList(1, 2)); // 1 1 2 2
+//      var iterator=  new ZigzagIterator(Arrays.asList(1), Arrays.asList(2, 3, 4)); // 1 2 3 4
+//      var iterator=  new ZigzagIterator(Arrays.asList(1, 3, 5), Arrays.asList(2, 4)); // 1 2 3 4 5
+//      var iterator=  new ZigzagIterator(Arrays.asList(), Arrays.asList(1, 2, 3)); // 1 2 3
+//      var iterator=  new ZigzagIterator(Arrays.asList(10, 20, 30), Arrays.asList()); // 10 20 30
+//      var iterator=  new ZigzagIterator(Arrays.asList(), Arrays.asList()); // (пустой вывод)
+      var iterator=  new ZigzagIterator(Arrays.asList(7), Arrays.asList(8)); // 7 8
+//      var iterator=  new ZigzagIterator(Arrays.asList(1, 2, 3, 4), Arrays.asList(5, 6)); // 1 5 2 6 3 4
+
+        System.out.print("Результат обхода: ");
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ");
+        }
 
 
     }
