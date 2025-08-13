@@ -1,7 +1,4 @@
-import dt.tasks.Compressor;
-import dt.tasks.SearchIndex;
-import dt.tasks.SmileFixer;
-import dt.tasks.Symmetry;
+import dt.tasks.*;
 import utils.ListNode;
 import utils.Point;
 import utils.TreeNode;
@@ -163,7 +160,21 @@ public class Main {
         diameterOfBinaryTree.diameterOfBinaryTree(new TreeNode(1, null, new TreeNode(2, new TreeNode(3, new TreeNode(5), null), new TreeNode(4))));
  */
 
-        ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
-        reverseLinkedList.reverseList(new ListNode(0, new ListNode(1, new ListNode(2, new ListNode(3)))));
+       /* ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
+        reverseLinkedList.reverseList(new ListNode(0, new ListNode(1, new ListNode(2, new ListNode(3)))));*/
+
+       /* NeighborsSearch neighborsSearch = new NeighborsSearch();
+        neighborsSearch.neighborsSearch(new int[]{1, 2, 5, 6, 100},3,3);
+        neighborsSearch.neighborsSearch(new int[]{1, 2, 4, 5, 6}, 2, 0);   // []
+
+        neighborsSearch.neighborsSearch(new int[]{1, 3, 3, 5, 7, 9}, 2, 4); // [3, 3, 5, 1]
+        neighborsSearch.neighborsSearch(new int[]{10, 20, 30, 40, 50}, 0, 2); // [10, 20]
+        neighborsSearch.neighborsSearch(new int[]{5, 6, 7, 8, 9}, 4, 3);    // [8, 9, 7]
+        neighborsSearch.neighborsSearch(new int[]{1, 2, 3, 4, 5}, 2, 5);    // [3, 2, 4, 1, 5]
+        neighborsSearch.neighborsSearch(new int[]{2, 4, 6, 8, 10}, 1, 1);   // [4]
+        neighborsSearch.neighborsSearch(new int[]{1, 1, 1, 1, 1}, 0, 3);    // [1, 1, 1]
+        neighborsSearch.neighborsSearch(new int[]{1}, 0, 1);                // [1]*/
+
+
     }
 }
