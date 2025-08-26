@@ -7,7 +7,7 @@ import java.util.HashSet;
  *
  * Создаем сет, если очередной элемент не добавился - значит цикл есть, выводим true. Если где-то встретили null - выводим false
  */
-public class Prerequisites {
+public class LinkedListCycleDetection {
     public boolean hasCycle(ListNode head) {
         HashSet<ListNode> set = new HashSet();
         boolean res = set.add(head);
