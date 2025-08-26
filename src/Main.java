@@ -219,10 +219,18 @@ public class Main {
        /* Search2DMatrix search2DMatrix = new Search2DMatrix();
         search2DMatrix.searchMatrix(new int[][] {{1},{3}},4);*/
 
-        LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters = new LongestSubstringWithoutRepeatingCharacters();
-        longestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("abcabcbb");
+        /*LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters = new LongestSubstringWithoutRepeatingCharacters();
+        longestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("abcabcbb");*/
 
-
+        MergeTwoSortedLinkedLists mergeTwoSortedLinkedLists = new MergeTwoSortedLinkedLists();
+//        mergeTwoSortedLinkedLists.mergeTwoLists(new ListNode(1, new ListNode(2, new ListNode(4))), new ListNode(1, new ListNode(3, new ListNode(5))));
+//        mergeTwoSortedLinkedLists.mergeTwoLists(null, new ListNode(1, new ListNode(2)));
+//        mergeTwoSortedLinkedLists.mergeTwoLists(new ListNode(1, new ListNode(2, new ListNode(4))), new ListNode(1, new ListNode(3, new ListNode(4))));
+//        mergeTwoSortedLinkedLists.mergeTwoLists(new ListNode(1), new ListNode(2));
+        mergeTwoSortedLinkedLists.mergeTwoLists(
+                new ListNode(-9, new ListNode(-7, new ListNode(-3, new ListNode(-3, new ListNode(-1, new ListNode(2, new ListNode(3))))))),
+                new ListNode(-7, new ListNode(-7, new ListNode(-6, new ListNode(-6, new ListNode(-5, new ListNode(-3, new ListNode(2, new ListNode(4))))))))
+        );
 
 
 
