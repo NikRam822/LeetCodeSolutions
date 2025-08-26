@@ -5,9 +5,12 @@ import utils.TreeNode;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
+import java.util.concurrent.*;
+import java.util.concurrent.locks.LockSupport;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         /*TwoSum twoSum =new TwoSum();*/
         /*System.out.println(Arrays.toString(twoSum.twoSum(new int[] {-1,-2,-3,-4,-5},-8)));*/
 
@@ -209,9 +212,15 @@ public class Main {
             System.out.print(iterator.next() + " ");
         }*/
 
-        StringCompression stringCompression = new StringCompression();
-//        stringCompression.compress(new char[]{'a','a','b','b','c','c','c'});
-        stringCompression.compress(new char[]{'a','b','b'});
+/*        StringCompression stringCompression = new StringCompression();
+        stringCompression.compress(new char[]{'a','a','b','b','c','c','c'});
+        stringCompression.compress(new char[]{'a','b','b'});*/
+
+        Search2DMatrix search2DMatrix = new Search2DMatrix();
+        search2DMatrix.searchMatrix(new int[][] {{1},{3}},4);
+
+
+
 
 
     }
