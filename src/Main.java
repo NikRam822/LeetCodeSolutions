@@ -216,8 +216,11 @@ public class Main {
         stringCompression.compress(new char[]{'a','a','b','b','c','c','c'});
         stringCompression.compress(new char[]{'a','b','b'});*/
 
-        Search2DMatrix search2DMatrix = new Search2DMatrix();
-        search2DMatrix.searchMatrix(new int[][] {{1},{3}},4);
+       /* Search2DMatrix search2DMatrix = new Search2DMatrix();
+        search2DMatrix.searchMatrix(new int[][] {{1},{3}},4);*/
+
+        LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters = new LongestSubstringWithoutRepeatingCharacters();
+        longestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("abcabcbb");
 
 
 
