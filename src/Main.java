@@ -242,6 +242,9 @@ public class Main {
         encodeAndDecodeStrings.decode("neet code love you");
 */
 
+/*        NonCyclicalNumber nonCyclicalNumber = new NonCyclicalNumber();
+        nonCyclicalNumber.isHappy(101);*/
+
 
 
     }
