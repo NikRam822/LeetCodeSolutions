@@ -245,6 +245,12 @@ public class Main {
 /*        NonCyclicalNumber nonCyclicalNumber = new NonCyclicalNumber();
         nonCyclicalNumber.isHappy(101);*/
 
+/*        RotateImage rotateImage = new RotateImage();
+        rotateImage.rotate(new int[][]{{1,2,3}, {4,5,6}, {7,8,9}});
+        rotateImage.rotate(new int[][]{{1,2},{3,4}});*/
+
+        PalindromeWithDeleteOne palindromeWithDeleteOne = new PalindromeWithDeleteOne();
+        System.out.println(palindromeWithDeleteOne.isPalindromeWithDeleteOne("abcdbga"));
 
 
     }
