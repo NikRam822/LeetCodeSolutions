@@ -4,9 +4,8 @@ import utils.Point;
 import utils.TreeNode;
 
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Objects;
+import java.util.*;
+import java.util.List;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.LockSupport;
 
@@ -249,8 +248,23 @@ public class Main {
         rotateImage.rotate(new int[][]{{1,2,3}, {4,5,6}, {7,8,9}});
         rotateImage.rotate(new int[][]{{1,2},{3,4}});*/
 
-        PalindromeWithDeleteOne palindromeWithDeleteOne = new PalindromeWithDeleteOne();
-        System.out.println(palindromeWithDeleteOne.isPalindromeWithDeleteOne("abcdbga"));
+        /*PalindromeWithDeleteOne palindromeWithDeleteOne = new PalindromeWithDeleteOne();
+        System.out.println(palindromeWithDeleteOne.isPalindromeWithDeleteOne("abcdbga"));*/
+
+/*        InplaceCompress inplaceCompress = new InplaceCompress();
+        inplaceCompress.spaceNormalize( new ArrayList<Character>(Arrays.asList('a', ' ','b',' ',' ','c',' ',' ',' ',' ','d')));
+        inplaceCompress.spaceNormalize( new ArrayList<Character>(Arrays.asList(' ',' ','a', ' ','b',' ',' ','c',' ',' ',' ',' ','d')));
+        inplaceCompress.spaceNormalize( new ArrayList<Character>(Arrays.asList('a', ' ','f','b',' ',' ','c','h',' ',' ',' ','d')));*/
+
+       /* MaxOnesSubarray maxOnesSubarray = new MaxOnesSubarray();
+        maxOnesSubarray.findMaxSubArray(List.of(1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1));
+        maxOnesSubarray.findMaxSubArray( List.of(1, 1, 1, 1, 1, 1));
+        maxOnesSubarray.findMaxSubArray(List.of(0, 0, 1, 0, 1, 1));
+        maxOnesSubarray.findMaxSubArray(List.of( 0, 1, 0));
+        maxOnesSubarray.findMaxSubArray(List.of(0,1,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1));*/
+
+
+
 
 
     }
